@@ -21,6 +21,8 @@ Every time you give an AI tool a significant prompt, add an entry. Three lines e
 - **What I asked:** Add the architecture diagrams, booking state machine, Node HTTP router/server, configuration, startup script, and tests.
 - **What came back:** A layered architecture document, explicit booking transitions, static-file HTTP server, `/health` route, startup configuration, and `node:test` coverage.
 - **What was wrong (or "nothing"):** The first server draft relied on an implicit response/request property for HEAD handling and had redundant error-status logic; both were simplified. Added a regression test proving static requests cannot escape `public/`.
+- **Review verification:** The current implementation passes the Build 3 checks and the full test suite (141 tests); no further defects were found, so no production code was changed.
+- **Rules I was unsure about:** None.
 
 ## Build 4
 
